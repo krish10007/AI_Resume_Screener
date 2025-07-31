@@ -1,8 +1,10 @@
-📝 AI Resume Screener
+📝 AI Resume Screener:
+
 AI Resume Screener is a Flask-based web application that helps users analyze their resumes against a job description.
 It uses TF-IDF (Term Frequency – Inverse Document Frequency) and Cosine Similarity to calculate a match score and identify matched and missing keywords.
 
-🚀 Features
+🚀 Features:
+
 Upload your resume in .docx format
 
 Paste the job description directly into the form
@@ -13,7 +15,7 @@ Identify matched and missing keywords to improve your resume
 
 Clean and minimal web interface
 
-📸 Screenshots
+📸 Screenshots:
 
 Home Page: Shows the upload and job description form  
 ![Home Page](Screenshots/home.png)
@@ -21,7 +23,8 @@ Home Page: Shows the upload and job description form
 Results Page: Displays the match score and keywords  
 ![Results Page](Screenshots/results.png)
 
-⚙️ Installation & Setup
+⚙️ Installation & Setup:
+
 Clone the Repository
 Open a terminal and run:
 git clone https://github.com/krish10007/AI_Resume_Screener.git
@@ -47,14 +50,21 @@ Open in Browser
 http://127.0.0.1:5000
 
 📂 Project Structure
+|
 AI_Resume_Screener/
+|
 ├── static/ – CSS files (style.css)
+|
 ├── templates/ – HTML templates (index.html, result.html)
+|
 ├── app.py – Flask backend
+|
 ├── requirements.txt – Python dependencies
+|
 └── README.md – Project documentation
 
-🧠 How It Works
+🧠 How It Works:
+
 Extracts text from the uploaded resume (.docx)
 
 Converts both resume and job description to TF-IDF vectors
@@ -65,7 +75,8 @@ Identifies matched and missing keywords for optimization
 
 Displays results in a simple, clean web interface
 
-💡 Future Improvements
+💡 Future Improvements:
+
 Add PDF resume support
 
 Deploy the app to Heroku or AWS for live access

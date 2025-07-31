@@ -1,0 +1,61 @@
+/* General page style */
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fa;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Heading style */
+h2, h3 {
+    color: #333;
+}
+
+/* Form styling */
+form {
+    background: white;
+    padding: 20px;
+    margin: 30px auto;
+    border-radius: 10px;
+    width: 50%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Input and textarea styling */
+input[type="file"], textarea {
+    margin: 10px 0;
+    padding: 8px;
+    width: 80%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Button styling */
+button {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #45a049;
+}
+
+/* Result page list styling */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: #e8f0fe;
+    margin: 5px auto;
+    padding: 5px;
+    width: 40%;
+    border-radius: 5px;
+}

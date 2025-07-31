@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Resume Screener</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+    <h2>Upload Resume & Paste Job Description</h2>
+    <form action="/analyze" method="post" enctype="multipart/form-data">
+        <label>Upload Resume (.docx):</label><br>
+        <input type="file" name="resume" required><br><br>
+
+        <label>Paste Job Description:</label><br>
+        <textarea name="job_desc" rows="10" cols="50" required></textarea><br><br>
+
+        <button type="submit">Analyze</button>
+    </form>
+</body>
+</html>

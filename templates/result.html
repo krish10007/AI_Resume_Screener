@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Match Score</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h2>Match Score</h2>
+    <p>Your resume matches the job description by <strong>{{ score }}%</strong></p>
+
+    <h3>Matched Keywords:</h3>
+    <ul>
+        {% for word in keywords %}
+            <li>{{ word }}</li>
+        {% endfor %}
+    </ul>
+
+    <h3>Missing Keywords:</h3>
+    <ul>
+        {% for word in missing %}
+            <li>{{ word }}</li>
+        {% endfor %}
+    </ul>
+
+    <a href="/">Try Again</a>
+</body>
+</html>

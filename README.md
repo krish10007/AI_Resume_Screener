@@ -1,119 +1,79 @@
-# 📝 AI Resume Screener
+📝 AI Resume Screener
+AI Resume Screener is a Flask-based web application that helps users analyze their resumes against a job description.
+It uses TF-IDF (Term Frequency – Inverse Document Frequency) and Cosine Similarity to calculate a match score and identify matched and missing keywords.
 
-A Flask-based web application that helps job seekers **analyze their resumes** against a job description.  
-It uses **Natural Language Processing (TF-IDF + Cosine Similarity)** to calculate a **match score** and highlight **matched & missing keywords**.
+🚀 Features
+Upload your resume in .docx format
 
----
+Paste the job description directly into the form
 
-## 🚀 Features
+Get a match score (0-100%) based on similarity
 
-- 📂 **Upload Resume** in `.docx` format
-- 📋 **Paste Job Description** directly in the text area
-- 📊 **Get Resume Match Score** (0–100%)
-- 🔑 **Analyze Keywords**:
-  - Matched keywords present in your resume
-  - Missing keywords you can add to improve your resume
-- 🎨 **Clean and Minimal UI**
+Identify matched and missing keywords to improve your resume
 
----
+Clean and minimal web interface
 
-## 📸 Screenshots
+📸 Screenshots
 
-*(Add your screenshots here)*
+Home Page: Shows the upload and job description form  
+![Home Page](Screenshots/home.png)
 
-Example:
+Results Page: Displays the match score and keywords  
+![Results Page](Screenshots/results.png)
 
-**Home Page (Upload & Paste Job Description)**  
-![Home Page](screenshot-home.png)
-
-**Results Page (Match Score & Keyword Analysis)**  
-![Results Page](screenshot-results.png)
-
----
-
-## ⚙️ Installation & Setup
-
-Follow these steps to run the project locally:
-
-### 1️⃣ Clone the Repository
-```bash
+⚙️ Installation & Setup
+Clone the Repository
+Open a terminal and run:
 git clone https://github.com/krish10007/AI_Resume_Screener.git
 cd AI_Resume_Screener
-2️⃣ Create & Activate Virtual Environment
-Windows:
 
-bash
-Copy
-Edit
+Create and Activate Virtual Environment
+
+Windows:
 python -m venv venv
 venv\Scripts\activate
-Mac/Linux:
 
-bash
-Copy
-Edit
+Mac/Linux:
 python3 -m venv venv
 source venv/bin/activate
-3️⃣ Install Dependencies
-bash
-Copy
-Edit
+
+Install Dependencies
 pip install -r requirements.txt
-4️⃣ Run the Application
-bash
-Copy
-Edit
+
+Run the Application
 python app.py
-5️⃣ Open in Browser
-Go to:
 
-cpp
-Copy
-Edit
+Open in Browser
 http://127.0.0.1:5000
+
 📂 Project Structure
-php
-Copy
-Edit
 AI_Resume_Screener/
-│
-├── static/                # CSS files
-│   └── style.css
-│
-├── templates/             # HTML templates
-│   ├── index.html         # Upload resume & paste JD
-│   └── result.html        # Show match score & keywords
-│
-├── app.py                 # Flask backend
-├── requirements.txt       # Python dependencies
-└── README.md              # Project documentation
+├── static/ – CSS files (style.css)
+├── templates/ – HTML templates (index.html, result.html)
+├── app.py – Flask backend
+├── requirements.txt – Python dependencies
+└── README.md – Project documentation
+
 🧠 How It Works
-Extract Resume Text from the uploaded .docx file.
+Extracts text from the uploaded resume (.docx)
 
-Vectorize Resume & Job Description using TF-IDF.
+Converts both resume and job description to TF-IDF vectors
 
-Compute Similarity using Cosine Similarity.
+Calculates cosine similarity to determine match percentage
 
-Analyze Keywords:
+Identifies matched and missing keywords for optimization
 
-Matched keywords → present in both
-
-Missing keywords → in job description but not in resume
-
-Return Results as a clean web page with:
-
-Match Score (percentage)
-
-Keyword lists
+Displays results in a simple, clean web interface
 
 💡 Future Improvements
-📄 Support PDF resumes
+Add PDF resume support
 
-🌐 Deploy on Heroku or AWS for public access
+Deploy the app to Heroku or AWS for live access
 
-📊 Advanced scoring with word weighting and synonym matching
+Add synonym and weighted keyword scoring for better accuracy
 
 🏆 Author
 Krish Jakhar
-🎓 Computer Science Undergrad | 💻 Aspiring Software Engineer
-📌 GitHub Profile
+Computer Science Undergrad | Aspiring Software Engineer
+GitHub: https://github.com/krish10007
+
